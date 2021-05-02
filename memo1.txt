@@ -1,0 +1,38 @@
+linux の基礎知識
+  yum, apt-get パッケージ管理コマンド
+ネットワークの基礎知識
+  IPアドレス、サブネット
+  ドメイン、DNSの知識
+
+デプロイ
+  作成したプログラム -> 配置、設定、起動 -> 利用できる
+
+Docker Go言語で書かれている
+Docker 可搬性
+  PC - (dockerイメージ) -> Dockerリポジトリ -> 検証サーバ -> 本番サーバ
+
+メリット
+  - 再現性
+  - 素早い
+  - 同じ環境
+  - pc環境を汚さずに済む
+
+デメリット
+  - linuxの上ではlinuxコンテナしか動かない
+
+docker デーモン これが動いてないと基本動かない
+docker クライアント 基本的にはコマンド
+
+要件
+docker desktop 10.13~
+About docker desktop インストールされているdocker及び周辺アプリのversion
+
+option docker desktop
+  preferences 一般的な設定、デーモンが動いているlinuxの設定
+    自動起動設定　ログインすれば立ち上がる
+    resources advanced リソースの設定
+    file sharing *
+    proxies docker image 取得の設定 *
+
+docker desktop 動作確認
+  $ docker run hello-workd
